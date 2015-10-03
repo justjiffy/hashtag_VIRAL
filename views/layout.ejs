@@ -1,0 +1,63 @@
+<html>
+<head>
+	<title>OAuth App</title>
+</head>
+<body>
+
+	<h1>Login via Facebook</h1>
+
+	<div>
+		<% if(user != undefined) { %>
+				<h3>Below is the data sent by Facebook</h3>
+				<pre>
+					<%= user.fb %>
+				</pre>
+				<a href="/logout">Logout</a>
+			<% } else { %> 
+				<a href="/auth/facebook">Login with Facebook</a>
+		<% } %>
+	</div>
+
+
+	<h1>Login via Github</h1>
+	<div>
+		<% if(user != undefined) { %>
+				<h3>Below is the data sent by Github</h3>
+				<pre>
+					<%= user.gh %>
+				</pre>
+				<a href="/logout">Logout</a>
+			<% } else { %> 
+				<a href="/auth/github">Login with Github</a>
+		<% } %>
+	</div>
+
+	<h1>Login via Twitter</h1>
+	<div>
+		<% if(user != undefined) { %>
+				<h3>Below is the data sent by Twitter</h3>
+				<pre>
+					<%= user.twit %>
+				</pre>
+				<a href="/logout">Logout</a>
+			<% } else { %> 
+				<a href="/auth/twitter">Login with Twitter</a>
+		<% } %>
+	</div>
+
+
+	<h1>Login via Google</h1>
+	<div>
+		<% if(user != undefined) { %>
+				<h3>Below is the data sent by Google</h3>
+				<pre>
+					<%= user.goog %>
+				</pre>
+				<a href="/logout">Logout</a>
+			<% } else { %> 
+				<a href="/auth/google">Login with Google</a>
+		<% } %>
+	</div>
+
+</body>
+</html>
