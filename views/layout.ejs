@@ -69,18 +69,33 @@
 
 	<hr>
 
-<div style="clear:both"><h3>Twitter Feed on Bananas</h3>
-	<div id="twit_feed">
-		Number of tweets to show: <%= tweets.count %> <br>
-		Tweets:
-		<ul>
-			<% for(var i=0; i<tweets.count; i++) {%>
-			   <li><%= tweets.list[i].text %></li>
-			<% } %>
-		</ul>
+<!-- TWITTER FEED -->
+	<div style="clear:both"><h3>Twitter Feed on Bananas</h3>
+		<div id="twit_feed">
+			Number of tweets to show: <%= tweets.count %> <br>
+			Tweets:
+			<ul>
+				<% for(var i=0; i<tweets.count; i++) {%>
+				   <li><%= tweets.list[i].text %></li>
+				<% } %>
+			</ul>
 
+		</div>
 	</div>
-</div>
+
+
+<!-- INSTAGRAM FEED -->
+	<div style="clear:both"><h3>Instagram Feed on ?</h3>
+		<div id="insta_feed">
+		Img:
+			<ul>
+				<img src="<%= image %>" />
+			</ul>
+
+		</div>
+	</div>
+
+
 
 </body>
 </html>
