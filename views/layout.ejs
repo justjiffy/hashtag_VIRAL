@@ -1,12 +1,20 @@
 <html>
 <head>
 	<title>OAuth App</title>
+	<style> 
+		.link-to {
+			width: 24%;
+			float: left;
+			padding: 4px;
+			margin-bottom: 50px;
+		}
+	</style>
 </head>
 <body>
 
-	<h1>Login via Facebook</h1>
 
-	<div>
+	<div class="link-to">
+	<h1>Login via Facebook</h1>
 		<% if(user != undefined) { %>
 				<h3>Below is the data sent by Facebook</h3>
 				<pre>
@@ -19,8 +27,8 @@
 	</div>
 
 
+	<div class="link-to">
 	<h1>Login via Github</h1>
-	<div>
 		<% if(user != undefined) { %>
 				<h3>Below is the data sent by Github</h3>
 				<pre>
@@ -32,8 +40,8 @@
 		<% } %>
 	</div>
 
+	<div class="link-to">
 	<h1>Login via Twitter</h1>
-	<div>
 		<% if(user != undefined) { %>
 				<h3>Below is the data sent by Twitter</h3>
 				<pre>
@@ -46,8 +54,8 @@
 	</div>
 
 
+	<div class="link-to">
 	<h1>Login via Google</h1>
-	<div>
 		<% if(user != undefined) { %>
 				<h3>Below is the data sent by Google</h3>
 				<pre>
