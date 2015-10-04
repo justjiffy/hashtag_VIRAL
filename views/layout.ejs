@@ -70,7 +70,15 @@
 	<hr>
 
 <!-- TWITTER FEED -->
-	<div style="clear:both"><h3>Twitter Feed on Bananas</h3>
+	<div style="clear:both"><h3>Twitter Feed</h3>
+		
+		<div id="twit_search">
+			<form id="search-form">
+				<input type="text" name="twit-search" id="twit-search" value="" placeholder="Bananas" />
+				<button id="twit-search-button">Go!</button>
+			</form>
+		</div>
+
 		<div id="twit_feed">
 			Number of tweets to show: <%= tweets.count %> <br>
 			Tweets:
@@ -88,10 +96,9 @@
 	<div style="clear:both"><h3>Instagram Feed on ?</h3>
 		<div id="insta_feed">
 		Img:
-			<ul>
-				<img src="<%= image %>" />
-			</ul>
-
+			<% for(var i=0; i<show_grams.length; i++) {%>
+				   <img src="<%= show_grams[i] %>" style="border-radius: 50%"/>
+			<% } %>
 		</div>
 	</div>
 

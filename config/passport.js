@@ -79,8 +79,8 @@ module.exports = function(passport) {
 
 
 	passport.use('facebook', new FacebookStrategy({
-		clientID			: process.env.FACEBOOK_API_KEY,
-		clientSecret		: process.env.FACEBOOK_API_SECRET,
+		clientID			: "1636279349945538",
+		clientSecret		: "a2267775a774c1cb462fcb73c4da39c1",
 		callbackURL			: 'http://localhost:3000/auth/facebook/callback',
 		enableProof			: true,
 		profileFields		: ['name', 'emails']

@@ -6,15 +6,12 @@ Instagram.set('client_secret', '0ebac9c429a54249bcaa5b5d67e88b15');
 
 module.exports = instagrams = Instagram.media.popular({
   complete: function(data){
-    image = data[0].images.thumbnail.url;
-    console.log(image);
+	instagram = data;
+	show_count = 8;
+	show_grams = [];
+	for( var i=0; i<show_count; i++) {
+		show_grams.push(instagram[i].images.thumbnail.url);
+	}
+	console.log(show_grams);
   }
 });
-
-// module.exports = Instagram.tags.search({
-//   q: 'banana',
-//   count: 1,
-//   complete: function(data){
-//     console.log(data);
-//   }
-// });
