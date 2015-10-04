@@ -25,6 +25,7 @@ app.engine('ejs', require('ejs').renderFile);
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
 
+require ("./config/instagram");
 
 require("./config/twit");
 

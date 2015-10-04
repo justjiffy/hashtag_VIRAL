@@ -3,9 +3,9 @@
 	<title>OAuth App</title>
 	<style> 
 		.link-to {
-			width: 24%;
+			width: 10%;
 			float: left;
-			padding: 4px;
+			padding: 10px;
 			margin-bottom: 50px;
 		}
 	</style>
@@ -14,7 +14,7 @@
 
 
 	<div class="link-to">
-	<h1>Login via Facebook</h1>
+	<h2>Login via Facebook</h2>
 		<% if(user != undefined) { %>
 				<h3>Below is the data sent by Facebook</h3>
 				<pre>
@@ -28,7 +28,7 @@
 
 
 	<div class="link-to">
-	<h1>Login via Github</h1>
+	<h2>Login via Github</h2>
 		<% if(user != undefined) { %>
 				<h3>Below is the data sent by Github</h3>
 				<pre>
@@ -41,7 +41,7 @@
 	</div>
 
 	<div class="link-to">
-	<h1>Login via Twitter</h1>
+	<h2>Login via Twitter</h2>
 		<% if(user != undefined) { %>
 				<h3>Below is the data sent by Twitter</h3>
 				<pre>
@@ -55,7 +55,7 @@
 
 
 	<div class="link-to">
-	<h1>Login via Google</h1>
+	<h2>Login via Google</h2>
 		<% if(user != undefined) { %>
 				<h3>Below is the data sent by Google</h3>
 				<pre>
@@ -67,7 +67,9 @@
 		<% } %>
 	</div>
 
-<div><h3>Twitter Feed on Bananas</h3>
+	<hr>
+
+<div style="clear:both"><h3>Twitter Feed on Bananas</h3>
 	<div id="twit_feed">
 		Number of tweets to show: <%= tweets.count %> <br>
 		Tweets:
