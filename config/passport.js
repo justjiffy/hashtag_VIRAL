@@ -16,7 +16,6 @@ module.exports = function(passport) {
 	});
 
 
-
 	passport.use('twitter', new TwitterStrategy({
 			consumerKey			: 'aAVeIudbfTcs4theOn1UbLgNr',
 			consumerSecret		: 'rAG7zXOJKzLXtx5PlakplEJ20UOWEQmCesAk8drqJ4EhqggV5l',

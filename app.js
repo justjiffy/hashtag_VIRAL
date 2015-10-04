@@ -7,7 +7,7 @@ var mongoose       = require('mongoose');
 var passport       = require('passport');
 var expressSession = require('express-session');
 var cookieParser   = require("cookie-parser");
-var Twit           = require('twit');
+var twitter = require('twit');
 
 // Mongoose Setup
 mongoose.connect('mongodb://localhost:27017/facebook-authentication-app');
@@ -24,6 +24,9 @@ app.set('views', path.join(__dirname, 'views'));
 app.engine('ejs', require('ejs').renderFile);
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
+
+
+require("./config/twit");
 
 // Setting up the Passport Strategies
 require("./config/passport")(passport);

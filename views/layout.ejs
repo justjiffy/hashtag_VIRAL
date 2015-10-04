@@ -59,5 +59,18 @@
 		<% } %>
 	</div>
 
+<div><h3>Twitter Feed on Bananas</h3>
+	<div id="twit_feed">
+		Number of tweets to show: <%= tweets.count %> <br>
+		Tweets:
+		<ul>
+			<% for(var i=0; i<tweets.count; i++) {%>
+			   <li><%= tweets.list[i].text %></li>
+			<% } %>
+		</ul>
+
+	</div>
+</div>
+
 </body>
 </html>
