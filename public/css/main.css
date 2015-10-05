@@ -1,3 +1,34 @@
 * {
 	font-family: tahoma;
 }
+
+body {
+	background-color: black;
+	width: 85%;
+	margin: 0 auto;
+}
+
+.link-to {
+	color: white;
+	float: left;
+	margin: 10px;
+	margin-bottom: 50px;
+}
+
+.link-to a, a:visited, a:active {
+	color: yellow;
+}
+
+.link-to a:hover {
+	color: orange;
+}
+
+.feed {
+	background-color: white;
+	clear: both;
+	width: 75%;
+	margin: 0 auto;
+	margin-bottom: 100px;
+	padding: 25px;
+	border-radius: 25px;
+}
