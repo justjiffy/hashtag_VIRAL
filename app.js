@@ -32,6 +32,9 @@ require("./config/twit");
 // Setting up the Passport Strategies
 require("./config/passport")(passport);
 
+var feedsController = require('./controllers/feeds');
+app.use('/', feedsController);
+
 app.get('/', function(req, res) {
 	res.render('layout', {user: req.user});
 });

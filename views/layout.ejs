@@ -74,9 +74,9 @@
 	<div style="clear:both"><h3>Twitter Feed</h3>
 		
 		<div id="twit_search">
-			<form id="search-form">
-				<input type="text" name="twit-search" id="twit-search" value="" placeholder="Bananas" />
-				<button id="twit-search-button">Go!</button>
+			<form id="search-form" action="/feeds" method="get">
+				<input type="text" name="search" id="search" value="" placeholder="Bananas" />
+				<button id="search-button">Go!</button>
 			</form>
 		</div>
 
@@ -94,7 +94,7 @@
 
 
 <!-- INSTAGRAM FEED -->
-	<div style="clear:both"><h3>Instagram Feed on ?</h3>
+	<div style="clear:both"><h3>Top 7 Most Popular Instagram Feeds</h3>
 		<div id="insta_feed">
 		Img:
 			<% for(var i=0; i<show_grams.length; i++) {%>
