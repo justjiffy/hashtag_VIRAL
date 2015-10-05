@@ -7,7 +7,7 @@ var T = new Twit({
     access_token_secret:  '6I6fV9E15LvxOI5KrqEcLDnfpqOXHn6M6DekWIeKRNoaD'
 });
 
-module.exports = tweets = T.get('search/tweets', { q: 'banana since:2015-10-02', count: 5 },
+module.exports = tweets = T.get('search/tweets', { q: 'cats since:2015-10-02', count: 15 },
 	function(err, data, response) {
 		tweets.count = data.search_metadata.count;
 		tweets.list = data.statuses;
