@@ -92,8 +92,43 @@
 		</div>
 	</div>
 
-
+<!-- YOUTUBE FEED -->
+	<div class="feed">
+		<form id="tube-form" action="/" method="get">
+			<input type="text" name="search" id="tubesearch" value="" placeholder="Kittens" />
+			<button id="tube-button">Search!</button>
+		</form>
+		<div id="youtube_feed">
+		</div>
+	</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var youtubes = $.get('https://www.googleapis.com/youtube/v3/videos?part=id,player&maxResults=10&chart=mostPopular&key=AIzaSyCbVPyvwNghVUScGrY6l-vEc4R_O5msLAU').done(function(responseJSON) {
+				console.log(responseJSON);
+				for (var i = 0; i < responseJSON.items.length-1; i++) {
+					$('#youtube_feed').append(
+						responseJSON.items[i].player.embedHtml
+						);
+				}
+			})
+		})
+
+		$('#tube-button').click(function (e) {
+			e.preventDefault();
+			var youtubes = $.get('https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=' + $('#tubesearch').val() + '&key=AIzaSyCbVPyvwNghVUScGrY6l-vEc4R_O5msLAU').done(function(responseJSON) {
+				console.log(responseJSON);
+				$('#youtube_feed').empty();
+				for(var i = 0; i < responseJSON.items.length - 1; i++) {
+					$('#youtube_feed').append(
+						'<p>' + responseJSON.items[i].id.videoId + '</p>'
+						);
+				}
+			});
+		});
+	</script>
+
+
 <script src="js/main.js"></script>
 </body>
 </html>

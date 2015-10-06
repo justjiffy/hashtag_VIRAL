@@ -7,14 +7,14 @@ var T = new Twit({
     access_token_secret:  '6I6fV9E15LvxOI5KrqEcLDnfpqOXHn6M6DekWIeKRNoaD'
 });
 
-// module.exports = tweets = function(search, controllerResponse) {
-// 	T.get('search/tweets', { q: search, count: 15 },
-// 		function(err, data, response) {
-// 			console.log(data);
-// 			controllerResponse.json(data)
-// 			//return data;
-// 			// tweets.count = data.search_metadata.count;
-// 			// tweets.list = data.statuses;
-// 			// tweets.list = data.statuses[0].text;
-// 		});
-// };
+module.exports = tweets = function(search, controllerResponse) {
+	T.get('search/tweets', { q: search, count: 15 },
+		function(err, data, response) {
+			console.log(data);
+			controllerResponse.json(data);
+			//return data;
+			// tweets.count = data.search_metadata.count;
+			// tweets.list = data.statuses;
+			// tweets.list = data.statuses[0].text;
+		});
+};
