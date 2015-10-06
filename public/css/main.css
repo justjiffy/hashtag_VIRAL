@@ -4,7 +4,6 @@
 
 body {
 	background-color: black;
-	width: 85%;
 	margin: 0 auto;
 }
 
@@ -45,6 +44,7 @@ body {
 	background-size: cover;
 	width: 400px; 
 	height: 270px;
+	float: left;
 }
 .twit {
 	text-align: center;;

@@ -20,34 +20,33 @@
 				<a href="/auth/facebook"><i class="fa fa-facebook-official fa-3x"></i></a>
 		<% } %>
 	</div>
-	
 
+
+
+<!-- SEARCH BAR -->
 		<div id="twit_search">
 			<form id="search-form" action="/feeds" method="get">
 				<input type="text" name="search" id="search" value="" placeholder="Bananas" />
-				<button id="search-button">Go!</button>
+				<button id="search-button">Give it to me!</button>
 			</form>
 		</div>
 
-<!-- TWITTER and INSTAGRAM FEED -->
-	<div class="feed"><h3>Twitter and Instagram Feed</h3>
-		
+	
+	</div>
 
+
+<!-- INSTAGRAM and TWITTER FEEDS -->
+	<div class="feed">
 		<div id="twit_feed">
 				<% for(var i=0; i<tweets.count; i++) {%>
 				   <div class="tweet"><p class="twit"><%= tweets.list[i].text %></p></div>
 				<% } %>
 		</div>
-	</div>
-
-
-<!-- INSTAGRAM FEED -->
-	<div class="feed"><h3>Instagram Feed</h3>
+		
 		<div id="insta_feed">
-		Img:
 			<% console.log(show_grams) %>
 			<% for(var i=0; i<show_count; i++) {%>
-				   <div class="instagram"><img class="instagram-pic" src="<%= show_grams[i] %>"/><img class="frame" src="images/polaroid.png" /></div>
+				   <img class="instagram-pic" src="<%= show_grams[i] %>"/><img class="frame" src="images/polaroid.png" />
 			<% } %>
 		</div>
 	</div>
