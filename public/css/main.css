@@ -36,13 +36,15 @@ body {
 .tweet {
 	background-image: url('../images/cloud.png'); 
 	background-size: cover;
-	width: 300px; 
-	height: 200px;
+	width: 400px; 
+	height: 270px;
 }
 .twit {
 	text-align: center;;
-	width: 200px;
-	padding: 20px 0 0 100px;
+	padding-top: 27%;
+	padding-left: 22%;
+	height: 200px;
+	width: 250px;
 }
 
 .frame {
@@ -53,7 +55,6 @@ body {
 }
 
 .instagram-pic {
-	text-align: center;
 	padding-bottom: 50px;
 	padding-left: 60px;
 }
