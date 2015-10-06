@@ -86,7 +86,8 @@
 	<div class="feed"><h3>Top 7 Most Popular Instagram Feeds</h3>
 		<div id="insta_feed">
 		Img:
-			<% for(var i=0; i<show_grams.length; i++) {%>
+			<% console.log(show_grams) %>
+			<% for(var i=0; i<show_count; i++) {%>
 				   <img src="<%= show_grams[i] %>" style="border-radius: 50%"/>
 			<% } %>
 		</div>
@@ -94,10 +95,6 @@
 
 <!-- YOUTUBE FEED -->
 	<div class="feed">
-		<form id="tube-form" action="/" method="get">
-			<input type="text" name="search" id="tubesearch" value="" placeholder="Kittens" />
-			<button id="tube-button">Search!</button>
-		</form>
 		<h3>Top 7 Videos on YouTube</h3>
 		<div id="youtube_feed">
 		</div>
