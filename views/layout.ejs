@@ -70,20 +70,15 @@
 		</div>
 
 		<div id="twit_feed">
-			Number of tweets to show: <%= tweets.count %> <br>
-			Tweets:
-			<ul>
 				<% for(var i=0; i<tweets.count; i++) {%>
-				   <li><%= tweets.list[i].text %></li>
+				   <div class="tweet"><p class="twit"><%= tweets.list[i].text %></p></div>
 				<% } %>
-			</ul>
-
 		</div>
 	</div>
 
 
 <!-- INSTAGRAM FEED -->
-	<div class="feed"><h3>Top 7 Most Popular Instagram Feeds</h3>
+	<div class="feed"><h3>Instagram Feed</h3>
 		<div id="insta_feed">
 		Img:
 			<% console.log(show_grams) %>
@@ -95,7 +90,7 @@
 
 <!-- YOUTUBE FEED -->
 	<div class="feed">
-		<h3>Top 7 Videos on YouTube</h3>
+		<h3>YouTube Feed</h3>
 		<div id="youtube_feed">
 		</div>
 	</div>
