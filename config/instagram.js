@@ -9,7 +9,6 @@ module.exports = instagrams = Instagram.media.popular({
 	instagram = data;
 	show_count = 18;
 	show_grams = [];
-	snippit = "NGY6DqB1HX8";
 	for( var i=0; i<show_count; i++) {
 		show_grams.push(instagram[i].images.thumbnail.url);
 	}

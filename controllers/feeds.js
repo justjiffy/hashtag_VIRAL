@@ -4,11 +4,13 @@ var app             = express();
 var feedsController = express.Router();
 
 var twitter = require('../config/twit');
+var instagram = require('../config/instagram');
 
 feedsController.get('/feeds', function(req, res) {
 	var search = req.query.search;
 	console.log(search);
 	twitter(search, res);
+	instagram(search, res);
 
 });
 
