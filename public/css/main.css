@@ -32,3 +32,15 @@ body {
 	padding: 25px;
 	border-radius: 25px;
 }
+
+.tweet {
+	background-image: url('../images/cloud.png'); 
+	background-size: cover;
+	width: 300px; 
+	height: 200px;
+}
+.twit {
+	text-align: center;
+	padding: 20px 0 0 100px;
+	width: 300px;
+}

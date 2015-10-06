@@ -70,14 +70,9 @@
 		</div>
 
 		<div id="twit_feed">
-			Number of tweets to show: <%= tweets.count %> <br>
-			Tweets:
-			<ul>
 				<% for(var i=0; i<tweets.count; i++) {%>
-				   <li><%= tweets.list[i].text %></li>
+				   <div class="tweet"><p class="twit"><%= tweets.list[i].text %></p></div>
 				<% } %>
-			</ul>
-
 		</div>
 	</div>
 
