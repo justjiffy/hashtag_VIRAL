@@ -17,3 +17,6 @@ module.exports = tweets = function(search, controllerResponse) {
 			controllerResponse.render('../views/layout', {user: null});
 	});
 };
+
+	});
+};
