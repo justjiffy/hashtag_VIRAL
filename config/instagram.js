@@ -7,8 +7,9 @@ Instagram.set('client_secret', '0ebac9c429a54249bcaa5b5d67e88b15');
 module.exports = instagrams = Instagram.media.popular({
   complete: function(data){
 	instagram = data;
-	show_count = 8;
+	show_count = 18;
 	show_grams = [];
+	snippit = "NGY6DqB1HX8";
 	for( var i=0; i<show_count; i++) {
 		show_grams.push(instagram[i].images.thumbnail.url);
 	}

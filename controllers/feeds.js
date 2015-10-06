@@ -20,5 +20,4 @@ feedsController.get('/youtube', function(req, res) {
 
 });
 
-
 module.exports = feedsController;
