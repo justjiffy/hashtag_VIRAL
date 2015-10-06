@@ -40,9 +40,20 @@ body {
 	height: 200px;
 }
 .twit {
-	text-align: center;
-	padding-top: 22%;
-	padding-left: 20%;
-	height: 200px;
+	text-align: center;;
 	width: 200px;
+	padding: 20px 0 0 100px;
+}
+
+.frame {
+	width: 215px;
+	height: 215px;
+	z-index: 1;
+	margin-left: -181px;
+}
+
+.instagram-pic {
+	text-align: center;
+	padding-bottom: 50px;
+	padding-left: 60px;
 }
