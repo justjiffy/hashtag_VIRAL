@@ -8,11 +8,21 @@ var T = new Twit({
 });
 
 module.exports = tweets = function(search, controllerResponse) {
+
 	T.get('search/tweets', { q: search, count: 5 },
 		function(err, data, response) {
 			console.log(data);
 			tweets.count = data.search_metadata.count;
 			tweets.list = data.statuses;
 			controllerResponse.render('../views/layout', {user: null});
+
+	T.get('search/tweets', { q: search, count: 15 },
+		function(err, data, response) {
+			console.log(data);
+			controllerResponse.json(data);
+			//return data;
+			// tweets.count = data.search_metadata.count;
+			// tweets.list = data.statuses;
+			// tweets.list = data.statuses[0].text;
 		});
 };
