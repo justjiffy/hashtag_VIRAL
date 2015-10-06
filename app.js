@@ -35,9 +35,9 @@ require("./config/passport")(passport);
 var feedsController = require('./controllers/feeds');
 app.use('/', feedsController);
 
-app.get('/', function(req, res) {
-	res.render('layout', {user: req.user});
-});
+// app.get('/', function(req, res) {
+// 	res.render('layout', {user: req.user});
+// });
 
 app.get('/auth/facebook', passport.authenticate('facebook', { scope: 'email' }));
 app.get('/auth/github', passport.authenticate('github', { scope: 'email' }));

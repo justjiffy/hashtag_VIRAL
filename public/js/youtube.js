@@ -13,7 +13,7 @@ $(document).ready(function() {
 	})();
 	if (urlParams === null) {
 		var youtubes = $.get('https://www.googleapis.com/youtube/v3/videos?part=id,player&maxResults=5&chart=mostPopular&key=AIzaSyCbVPyvwNghVUScGrY6l-vEc4R_O5msLAU').done(function(responseJSON) {
-			console.log(responseJSON);
+			// console.log(responseJSON);
 			for (var i = 0; i < responseJSON.items.length; i++) {
 				$('#youtube_feed').append(
 					responseJSON.items[i].player.embedHtml
@@ -22,7 +22,7 @@ $(document).ready(function() {
 		});
 	} else {
 		var youtubess = $.get('https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=5&q=' + urlParams.search + '&key=AIzaSyCbVPyvwNghVUScGrY6l-vEc4R_O5msLAU').done(function(responseJSON) {
-			console.log(responseJSON);
+			// console.log(responseJSON);
 			$('#youtube_feed').empty();
 			for(var i = 0; i < responseJSON.items.length; i++) {
 				$('#youtube_feed').append(
@@ -30,19 +30,20 @@ $(document).ready(function() {
 					);
 			}
 		});
-		console.log(urlParams);
+		// console.log(urlParams);
 	}
 });
 
-$('#search-button').click(function (e) {
-	// e.preventDefault();
-	var youtubes = $.get('https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=5&q=' + $('#search-button').val() + '&key=AIzaSyCbVPyvwNghVUScGrY6l-vEc4R_O5msLAU').done(function(responseJSON) {
-		console.log(responseJSON);
-		$('#youtube_feed').empty();
-		for(var i = 0; i < responseJSON.items.length; i++) {
-			$('#youtube_feed').append(
-				'<iframe width="640" height="360" src="//www.youtube.com/embed/' + responseJSON.items[i].id.videoId + '" frameborder="0" allowfullscreen></iframe>'
-				);
-		}
-	});
-});
+//OLD CODE FROM INDEPENDENT YOUTUBE SEARCH
+// $('#search-button').click(function (e) {
+// 	// e.preventDefault();
+// 	var youtubes = $.get('https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=5&q=' + $('#search-button').val() + '&key=AIzaSyCbVPyvwNghVUScGrY6l-vEc4R_O5msLAU').done(function(responseJSON) {
+// 		console.log(responseJSON);
+// 		$('#youtube_feed').empty();
+// 		for(var i = 0; i < responseJSON.items.length; i++) {
+// 			$('#youtube_feed').append(
+// 				'<iframe width="640" height="360" src="//www.youtube.com/embed/' + responseJSON.items[i].id.videoId + '" frameborder="0" allowfullscreen></iframe>'
+// 				);
+// 		}
+// 	});
+// });
