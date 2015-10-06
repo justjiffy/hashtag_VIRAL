@@ -20,54 +20,18 @@
 				<a href="/auth/facebook"><i class="fa fa-facebook-official fa-3x"></i></a>
 		<% } %>
 	</div>
+	
 
-
-	<div class="link-to">
-		<% if(user != undefined) { %>
-				<h3>Below is the data sent by Github</h3>
-				<pre>
-					<%= user.gh %>
-				</pre>
-				<a href="/logout">Logout</a>
-			<% } else { %> 
-				<a href="/auth/github"><i class="fa fa-github-square fa-3x"></i></a>
-		<% } %>
-	</div>
-
-	<div class="link-to">
-		<% if(user != undefined) { %>
-				<h3>Below is the data sent by Twitter</h3>
-				<pre>
-					<%= user.twit %>
-				</pre>
-				<a href="/logout">Logout</a>
-			<% } else { %> 
-				<a href="/auth/twitter"><i class="fa fa-twitter-square fa-3x"></i></a>
-		<% } %>
-	</div>
-
-
-	<div class="link-to">
-		<% if(user != undefined) { %>
-				<h3>Below is the data sent by Google</h3>
-				<pre>
-					<%= user.goog %>
-				</pre>
-				<a href="/logout">Logout</a>
-			<% } else { %> 
-				<a href="/auth/google"><i class="fa fa-google-plus-square fa-3x"></i></a>
-		<% } %>
-	</div>
-
-<!-- TWITTER FEED -->
-	<div class="feed"><h3>Twitter Feed</h3>
-		
 		<div id="twit_search">
 			<form id="search-form" action="/feeds" method="get">
 				<input type="text" name="search" id="search" value="" placeholder="Bananas" />
 				<button id="search-button">Go!</button>
 			</form>
 		</div>
+
+<!-- TWITTER and INSTAGRAM FEED -->
+	<div class="feed"><h3>Twitter and Instagram Feed</h3>
+		
 
 		<div id="twit_feed">
 				<% for(var i=0; i<tweets.count; i++) {%>

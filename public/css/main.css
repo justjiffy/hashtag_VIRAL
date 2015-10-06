@@ -33,6 +33,13 @@ body {
 	border-radius: 25px;
 }
 
+#twit_search {
+	position: fixed;
+	top: 10px;
+	right: 50%;
+	display: inline;
+}
+
 .tweet {
 	background-image: url('../images/cloud.png'); 
 	background-size: cover;
