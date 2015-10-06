@@ -44,3 +44,16 @@ body {
 	padding: 20px 0 0 100px;
 	width: 300px;
 }
+
+.frame {
+	width: 215px;
+	height: 215px;
+	z-index: 1;
+	margin-left: -181px;
+}
+
+.instagram-pic {
+	text-align: center;
+	padding-bottom: 50px;
+	padding-left: 60px;
+}
