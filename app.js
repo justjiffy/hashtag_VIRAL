@@ -9,6 +9,7 @@ var expressSession = require('express-session');
 var cookieParser   = require("cookie-parser");
 var twitter = require('twit');
 
+
 // Mongoose Setup
 mongoose.connect('mongodb://localhost:27017/facebook-authentication-app');
 

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<title>OAuth App</title>
@@ -81,7 +82,6 @@
 	<div class="feed"><h3>Instagram Feed</h3>
 		<div id="insta_feed">
 		Img:
-			<% console.log(show_grams) %>
 			<% for(var i=0; i<show_count; i++) {%>
 				   <div class="instagram"><img class="instagram-pic" src="<%= show_grams[i] %>"/><img class="frame" src="images/polaroid.png" /></div>
 			<% } %>
@@ -92,11 +92,20 @@
 	<div class="feed">
 		<h3>YouTube Feed</h3>
 		<div id="youtube_feed">
+
 		</div>
 	</div>
+
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/youtube.js"></script>
+
+<script>
+
+
+
+</script>
 </body>
 </html>
