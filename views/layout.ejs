@@ -27,7 +27,7 @@
 		<div id="twit_search">
 			<form id="search-form" action="/feeds" method="get">
 				<input type="text" name="search" id="search" value="" placeholder="Bananas" />
-				<button id="search-button">Give it to me!</button>
+				<button id="search-button">Gimme!</button>
 			</form>
 		</div>
 
@@ -35,20 +35,35 @@
 
 <!-- INSTAGRAM and TWITTER FEEDS -->
 
-<div class="parallax">
-
-		<div id="insta_feed">
-			<% for(var i=0; i<show_count; i+=3) {%>
+<div class="parallax" style="margin-top:50px">
+	<div id="insta_feed">
+		<% for(var i=0; i<show_count; i+=3) {%>
 				   
-				   <div class="parallax_layer parallax_layer-back"><img class="instagram-pic" src="<%= show_grams[i] %>"/><img class="frame" src="images/polaroid.png" /></div>
+		<img class="instagram-pic parallax_layer parallax_layer-back" style="background-image: url('<%= show_grams[i] %>'); background-size: 150px 150px; background-repeat: no-repeat; background-position: center; margin: 0 50%" src="images/polaroid.png" />
 
-				   <div class="tweet parallax_layer parallax_layer-base"><p class="twit"><%= tweets.list[i].text %></p></div>
+		<img class="instagram-pic parallax_layer parallax_layer-back" style="background-image: url('<%= show_grams[i+1] %>'); background-size: 150px 150px; background-repeat: no-repeat; background-position: center;  margin: 20% 0" src="images/polaroid.png" />
 
-				   <div class="parallax_layer parallax_layer-back" style="margin: 250px"><img class="instagram-pic" src="<%= show_grams[i+=1] %>"/><img class="frame" src="images/polaroid.png" /></div>
+		<img class="instagram-pic parallax_layer parallax_layer-back" style="background-image: url('<%= show_grams[i+2] %>'); background-size: 150px 150px; background-repeat: no-repeat; background-position: center; margin: 600px;" src="images/polaroid.png" />
 
-				   <div class="tweet parallax_layer parallax_layer-base" style="margin: 450px"><p class="twit"><%= tweets.list[i+=1].text %></p></div>
+		<div class="tweet parallax_layer parallax_layer-base"><p class="twit"><%= tweets.list[0].text %></p>
+	   	 </div>
 
-			<% } %>
+	   	 <div class="tweet parallax_layer parallax_layer-base" style="margin: 450px 50px"><p class="twit">
+	   	  <%= tweets.list[1].text %></p></div>
+
+	   	  <div class="tweet parallax_layer parallax_layer-base" style="margin: 900px 600px"><p class="twit">
+	   	   <%= tweets.list[2].text %></p></div>
+
+	   	  <div class="tweet parallax_layer parallax_layer-base" style="margin: 1200px 200px"><p class="twit">
+	   	   <%= tweets.list[3].text %></p></div>
+
+	   	  <div class="tweet parallax_layer parallax_layer-base" style="margin: 1500px 750px"><p class="twit">
+	   	   <%= tweets.list[4].text %></p></div>
+
+	   	   <div class="tweet parallax_layer parallax_layer-base" style="margin: 210px 500px"><p class="twit">
+	   	   <%= tweets.list[5].text %></p></div>
+
+	   	   <% } %>
 		</div>
 	</div>
 

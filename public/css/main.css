@@ -63,8 +63,9 @@ body {
 }
 
 .instagram-pic {
-	padding-bottom: 50px;
-	padding-left: 60px;
+  width: 200px;
+  height: 200px;
+  padding-top: 20px;
 }
 
 

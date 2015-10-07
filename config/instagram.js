@@ -15,7 +15,7 @@ module.exports = instagrams = function(search, controllerResponse) {
 				show_grams.push(data[i].images.thumbnail.url);
 			}
 				controllerResponse.render('../views/layout', {user: null});
-			// console.log(show_grams);
+			console.log(show_grams);
 		}
 });
 };
