@@ -9,13 +9,13 @@ module.exports = instagrams = function(search, controllerResponse) {
 	name: search,
 		complete: function(data){
 			// instagram = data;
-			show_count = 18;
+			show_count = 20;
 			show_grams = [];
 			for( var i=0; i<show_count; i++) {
 				show_grams.push(data[i].images.thumbnail.url);
 			}
 				controllerResponse.render('../views/layout', {user: null});
-			// console.log(show_grams);
+			console.log(show_grams);
 		}
 });
 };

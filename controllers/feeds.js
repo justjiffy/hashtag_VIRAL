@@ -10,11 +10,15 @@ feedsController.get('/', function(req, res){
 	res.render('../views/layout', {user: null});
 });
 
-feedsController.get('/feeds', function(req, res) {
+feedsController.get('/feeds/json', function(req, res) {
 	var search = req.query.search;
-	var all_search = [];
-	instagram(search, res);
-	tweets(search, res);
+
+	T.get('search/tweets', { q: search, count: 20, language: 'en' },
+		function(err, data, response) {
+			tweets_count = data.search_metadata.count;
+			tweets_list = data.statuses;
+			res.json(tweets_list);
+	});	
 });
 
 
