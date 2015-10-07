@@ -12,6 +12,7 @@ feedsController.get('/', function(req, res){
 
 feedsController.get('/feeds', function(req, res) {
 	var search = req.query.search;
+	var all_search = [];
 	instagram(search, res);
 	tweets(search, res);
 });

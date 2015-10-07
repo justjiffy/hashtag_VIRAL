@@ -32,21 +32,18 @@
 		</div>
 
 	
-	</div>
-
 
 <!-- INSTAGRAM and TWITTER FEEDS -->
 	<div class="feed">
 		<div id="twit_feed">
 				<% for(var i=0; i<tweets.count; i++) {%>
-				   <div class="tweet"><p class="twit"><%= tweets.list[i].text %></p></div>
 				<% } %>
 		</div>
 		
 		<div id="insta_feed">
-			<% console.log(show_grams) %>
 			<% for(var i=0; i<show_count; i++) {%>
 				   <img class="instagram-pic" src="<%= show_grams[i] %>"/><img class="frame" src="images/polaroid.png" />
+				   <div class="tweet"><p class="twit"><%= tweets.list[i].text %></p></div>
 			<% } %>
 		</div>
 	</div>

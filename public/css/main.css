@@ -3,7 +3,7 @@
 }
 
 body {
-	background-color: black;
+	background-color: #7fd0ff;
 	margin: 0 auto;
 }
 
@@ -23,7 +23,7 @@ body {
 }
 
 .feed {
-	background-color: white;
+	background-color: #7fd0ff;
 	clear: both;
 	width: 75%;
 	margin: 0 auto;

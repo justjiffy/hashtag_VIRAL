@@ -9,7 +9,7 @@ var T = new Twit({
 
 module.exports = tweets = function(search, controllerResponse) {
 
-	T.get('search/tweets', { q: search, count: 5 },
+	T.get('search/tweets', { q: search, count: 20 },
 		function(err, data, response) {
 			// console.log(data);
 			tweets.count = data.search_metadata.count;
