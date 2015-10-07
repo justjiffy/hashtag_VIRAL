@@ -14,7 +14,7 @@ module.exports = tweets = function(search, controllerResponse) {
 			// console.log(data);
 			tweets.count = data.search_metadata.count;
 			tweets.list = data.statuses;
-			// controllerResponse.render('../views/layout', {user: null});
+			controllerResponse.renderJSON;
 	});
 
 	

@@ -15,7 +15,6 @@ feedsController.get('/feeds', function(req, res) {
 	var all_search = [];
 	instagram(search, res);
 	tweets(search, res);
-	console.log(show_grams[19])
 });
 
 
