@@ -13,17 +13,12 @@ feedsController.get('/', function(req, res){
 feedsController.get('/feeds/json', function(req, res) {
 	var search = req.query.search;
 
-	T.get('search/tweets', { q: search, count: 20 },
+	T.get('search/tweets', { q: search, count: 20, language: 'en' },
 		function(err, data, response) {
-			// console.log(data);
 			tweets_count = data.search_metadata.count;
 			tweets_list = data.statuses;
 			res.json(tweets_list);
 	});	
-
-	// instagram(search, res);
-	// tweets(search, res);
-	// res.json(res);
 });
 
 
