@@ -2,7 +2,6 @@ var express         = require('express');
 var bodyParser      = require('body-parser');
 var app             = express();
 var feedsController = express.Router();
-var http = require('http');
 var request = require('request');
 
 var twitter = require('../config/twit');
@@ -21,8 +20,7 @@ feedsController.get('/feeds/search', function(req, res) {
 
 	T.get('search/tweets', { q: search, count: 20, language: 'en' },
 		function(err, data, response) {
-			tweets_count = data.search_metadata.count;
-			tweets_list = data.statuses;
+			var tweets_list = data.statuses;
 			// res.json(tweets_list);
 
 			twitter.feed = tweets_list;
@@ -40,6 +38,8 @@ feedsController.get('/feeds/search', function(req, res) {
 				});
 			});
 	});
+
+
 });
 
 
