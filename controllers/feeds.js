@@ -19,11 +19,7 @@ feedsController.get('/feeds/json', function(req, res) {
 			tweets_count = data.search_metadata.count;
 			tweets_list = data.statuses;
 			res.json(tweets_list);
-	});	
-	// console.log(search);
-	instagram(search, res);
-	twitter(search, res);
-	// console.log(youtube.videos);
+	});
 });
 
 
