@@ -6,6 +6,7 @@ var feedsController = express.Router();
 var twitter = require('../config/twit');
 var instagram = require('../config/instagram');
 
+
 feedsController.get('/', function(req, res){
 	res.render('../views/layout', {user: null});
 });
@@ -19,6 +20,10 @@ feedsController.get('/feeds/json', function(req, res) {
 			tweets_list = data.statuses;
 			res.json(tweets_list);
 	});	
+	// console.log(search);
+	instagram(search, res);
+	twitter(search, res);
+	// console.log(youtube.videos);
 });
 
 
