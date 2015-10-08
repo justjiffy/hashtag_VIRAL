@@ -67,31 +67,3 @@ body {
   height: 375px;
   padding-top: 20px;
 }
-
-
-.parallax {
-  perspective: 1px;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
-.parallax_layer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.parallax_layer-base {
-  transform: translateZ(0);
-}
-
-.parallax_layer-back {
-  transform: translateZ(-1px) scale(2);
-}
-
-.parallax_layer-deep {
-  transform: translateZ(-2px) scale(3);
-}

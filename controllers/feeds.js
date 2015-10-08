@@ -9,7 +9,7 @@ var instagram = require('../config/instagram');
 
 
 feedsController.get('/', function(req, res){
-	res.render('../views/layout', {user: null});
+	res.render('../views/layout', {user: req.user});
 });
 
 feedsController.get('/feeds/search', function(req, res) {

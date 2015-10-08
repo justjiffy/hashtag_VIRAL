@@ -13,9 +13,9 @@
 	<div class="link-to">
 		<% if(user != undefined) { %>
 				<h3>Below is the data sent by Facebook</h3>
-				<pre>
+				<p>
 					<%= user.fb %>
-				</pre>
+				</p>
 				<a href="/logout">Logout</a>
 			<% } else { %> 
 				<a href="/auth/facebook"><i class="fa fa-facebook-official fa-3x"></i></a>
@@ -36,10 +36,10 @@
 
 <!-- RENDER FEEDS -->
 <p id="test"></p>
-
+<img id="img_test"></p>
 </div>
-<script src="https://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
 <script src="js/main.js"></script>
 <script src="js/youtube.js"></script>
 
