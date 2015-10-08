@@ -5,6 +5,7 @@
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
 </head>
 <body>
 
@@ -12,10 +13,11 @@
 
 	<div class="link-to">
 		<% if(user != undefined) { %>
+
 				<h3>Below is the data sent by Facebook</h3>
-				<pre>
+				<p>
 					<%= user.fb %>
-				</pre>
+				</p>
 				<a href="/logout">Logout</a>
 			<% } else { %> 
 				<a href="/auth/facebook"><i class="fa fa-facebook-official fa-3x"></i></a>
@@ -32,20 +34,33 @@
 			</form>
 		</div>
 
-	
 
 <!-- RENDER FEEDS -->
-<p id="test"></p>
 
+<div id="test">
 </div>
-<script src="https://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	  <img src="images/film.png" style="z-index: -1" class="film"/>
+
+	<ul id="scene">
+	<!-- TWEETS -->	
+	  <li class="layer t" data-depth="0.10" id="one"></li>
+	  <li class="layer t" data-depth="0.20" id="two"></li>
+	  <li class="layer t" data-depth="0.40" id="three"></li>
+	  <li class="layer t" data-depth="0.60" id="four"><li>
+	  <li class="layer t" data-depth="0.80" id="five"></li>
+	  <li class="layer t" data-depth="1.00" id="six"></li>
+
+	  <!-- GRAMS -->
+	  <li class="layer i" data-depth="0.30" id="gram1"></li>
+	  <li class="layer i" data-depth="0.50" id="gram2"></li>
+	  <li class="layer i" data-depth="0.30" id="gram3"></li>
+	</ul>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/parallax/1.1.1/jquery.parallax.min.js"></script>
+<script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
 <script src="js/main.js"></script>
-<script src="js/youtube.js"></script>
-
-<script> 
-
-</script>
 
 </body>
 </html>
