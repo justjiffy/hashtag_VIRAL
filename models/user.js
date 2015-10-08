@@ -8,5 +8,7 @@ module.exports = mongoose.model('User', {
 		lastName: String,
 		email: String
 	},
+	email: String,
+	password: String,
 	favorites: []
 });
