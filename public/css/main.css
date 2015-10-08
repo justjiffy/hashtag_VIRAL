@@ -1,10 +1,12 @@
 * {
 	font-family: tahoma;
+
 }
 
 body {
 	background-color: #6df0ff;
 	margin: 0 auto;
+	overflow-x: hidden;
 }
 
 .link-to {
@@ -45,9 +47,10 @@ body {
 	background-size: cover;
 	width: 400px; 
 	height: 270px;
-	float: left;
 }
+
 .twit {
+	position: relative;
 	text-align: center;;
 	padding-top: 27%;
 	padding-left: 22%;
@@ -71,18 +74,49 @@ body {
   background-size: 82%;
 }
 
-#scene {
-	margin-top: 50px;
+.film {
+	position: fixed;
+	top: 0;
+	right: -500;
+	-ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
 }
 
-#one{
-	margin: 50px 0 0 100px;
+#scene { margin-top: 50px; width: 1000px; }
+
+#one { margin-top: 70px; margin-left: 10px; }
+
+#two{ margin-top: 570px; margin-left: 400px; }
+
+#three{ margin-top: 350px; margin-left: 700px; }
+
+#four { margin-top: 900px; margin-left: 270px; }
+
+#five { margin-top: 600px; margin-left: 30px; }
+
+#six { margin-top: 1400px; margin-left: 60; }
+
+#gram1 { margin-top: 0; margin-left: 650px; }
+
+#gram2 { margin-top: 750px; margin-left: 50px; }
+
+#gram3 { margin-top: 1500px; margin-left: 350px; }
+
+.tilt_15 {
+	-ms-transform: rotate(15deg); /* IE 9 */
+    -webkit-transform: rotate(15deg); /* Chrome, Safari, Opera */
+    transform: rotate(15deg);
 }
 
-#two{
-	margin: 150px 0 0 600px;
+.tiltBack_15 {
+	-ms-transform: rotate(-15deg); /* IE 9 */
+    -webkit-transform: rotate(-15deg); /* Chrome, Safari, Opera */
+    transform: rotate(-15deg);
 }
 
-#three{
-	margin: 550px 0 0 200px;
+.tilt_45 {
+	-ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
 }
