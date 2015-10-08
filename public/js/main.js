@@ -1,7 +1,10 @@
+var 
+
 $(document).ready( function() {
 	$.get('feeds/', function(data) {
 		for (i=0; i<5; i++) {
 			$('#one').append( "<div class='tweet'><p class='twit'>" + data[0].feed[i].text + "</p>" );
+
 			$('#gram1').append( "<img class='instagram-pic tilt_15' style='background-image: url(" + data[1].feed.data[i].images.thumbnail.url + ")' src='images/polaroid.png' />" );
 			$('#two').append( "<div class='tweet'><p class='twit'>" + data[0].feed[i+1].text + "</p>" );
 			$('#gram2').append( "<img class='instagram-pic tiltBack_15' style='background-image: url(" + data[1].feed.data[i+1].images.thumbnail.url + ")' src='images/polaroid.png' />" );
@@ -34,4 +37,13 @@ $('#scene').parallax({
 	calibrateY: true,
 	scalarX: 80,
 	scalarY: 80,
+});
+
+
+$('.t').click(function (e) {
+	e.preventDefault();
+	console.log(e);
+
+	$('#twitterModal').modal();
+	$('#tweetText').empty().append(e.target.innerText);
 });
