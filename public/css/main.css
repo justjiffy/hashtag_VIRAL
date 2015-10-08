@@ -16,6 +16,7 @@ body {
 	background-color: rgba(65, 65, 65, 0.2);
 	margin-top: -10px;
 	padding: 0;
+	z-index: 100;
 }
 
 #logo-div {
@@ -96,7 +97,8 @@ body {
 .instagram-pic {
   width: 375px;
   height: 375px;
-  padding-left: 10px;
+  padding-left: 8px;
+  padding-top: 10px;
   background-repeat: no-repeat; 
   background-position: center; 
   background-size: 82%;

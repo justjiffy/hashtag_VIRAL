@@ -20,7 +20,7 @@ $('#search-button').click(function(e) {
 	e.preventDefault();
 	var the_search = $('#search').val();
 	$.get("feeds/search?search="+the_search, function(data) {
-		$('#test').html("");
+		$('#one, #two, #three, #four, #five, #six, #gram1, #gram2, #gram3').html("");
 	
 		for (i=0; i<20; i++) {
 			$('#test').append( "<div class='tweet'><p class='twit'>" + data[0].feed[i].text + "</p>" );
