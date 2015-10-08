@@ -3,6 +3,11 @@
 
 }
 
+html {
+	padding: 0;
+	margin: 0;
+}
+
 body {
 	background-color: #6df0ff;
 	margin: 0 auto;
@@ -13,10 +18,11 @@ body {
 	width: 100%;
 	height: 10%;
 	position: fixed;
-	background-color: rgba(65, 65, 65, 0.2);
-	margin-top: -10px;
+	background-color: rgba(65, 65, 65, 0.0);
+	margin-top: -50px;
 	padding: 0;
 	z-index: 100;
+	padding-right: 50px;
 }
 
 #logo-div {
@@ -116,22 +122,22 @@ body {
 #scene { margin-top: 50px; width: 1000px; }
 
 #one { margin-top: 70px; margin-left: 10px; }
+#gram1 { margin-top: 0; margin-left: 650px; }
 
 #two{ margin-top: 570px; margin-left: 400px; }
 
-#three{ margin-top: 350px; margin-left: 700px; }
+#three{ margin-top: 950px; margin-left: 700px; }
 
-#four { margin-top: 900px; margin-left: 270px; }
-
-#five { margin-top: 600px; margin-left: 30px; }
-
-#six { margin-top: 1400px; margin-left: 60; }
-
-#gram1 { margin-top: 0; margin-left: 650px; }
-
+#four { margin-top: 1200px; margin-left: 270px; }
 #gram2 { margin-top: 750px; margin-left: 50px; }
 
-#gram3 { margin-top: 1500px; margin-left: 350px; }
+#five { margin-top: 1600px; margin-left: 30px; }
+
+#six { margin-top: 2100px; margin-left: 360px; }
+#gram3 { margin-top: 1500px; margin-left: 650px; }
+
+
+
 
 .tilt_15 {
 	-ms-transform: rotate(15deg); /* IE 9 */
