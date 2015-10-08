@@ -65,5 +65,8 @@ body {
 .instagram-pic {
   width: 375px;
   height: 375px;
-  padding-top: 20px;
+  padding-left: 10px;
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-size: 82%;
 }
