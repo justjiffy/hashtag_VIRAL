@@ -3,7 +3,7 @@
 }
 
 body {
-	background-color: #7fd0ff;
+	background-color: #6df0ff;
 	margin: 0 auto;
 }
 
@@ -69,4 +69,20 @@ body {
   background-repeat: no-repeat; 
   background-position: center; 
   background-size: 82%;
+}
+
+#scene {
+	margin-top: 50px;
+}
+
+#one{
+	margin: 50px 0 0 100px;
+}
+
+#two{
+	margin: 150px 0 0 600px;
+}
+
+#three{
+	margin: 550px 0 0 200px;
 }
