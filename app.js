@@ -33,16 +33,12 @@ require("./config/twit");
 // Setting up the Passport Strategies
 require("./config/passport")(passport);
 
+
 var feedsController = require('./controllers/feeds');
 app.use('/', feedsController);
 
-// app.get('/', function(req, res) {
-// 	res.render('layout', {user: req.user});
-// });
 
 app.get('/auth/facebook', passport.authenticate('facebook', { scope: 'email' }));
-app.get('/auth/github', passport.authenticate('github', { scope: 'email' }));
-app.get('/auth/twitter', passport.authenticate('twitter', { scope: 'email' }));
 
 
 app.get('/auth/facebook/callback',
@@ -51,34 +47,6 @@ app.get('/auth/facebook/callback',
 		failureRedirect: '/'
 	})
 );
-
-app.get('/auth/github/callback',
-	passport.authenticate('github', {
-		successRedirect: '/',
-		failureRedirect: '/'
-	})
-);
-
-app.get('/auth/twitter/callback',
-	passport.authenticate('twitter', {
-		successRedirect: '/',
-		failureRedirect: '/'
-	})
-);
-
-
-//Adapted from: https://github.com/mstade/passport-google-oauth2/blob/master/example/app.js
-app.get('/auth/google', passport.authenticate('google', { scope: [
-       'https://www.googleapis.com/auth/plus.login',
-       'https://www.googleapis.com/auth/plus.profile.emails.read'] 
-}));
-
-app.get( '/auth/google/callback', 
-    	passport.authenticate( 'google', { 
-    		successRedirect: '/',
-    		failureRedirect: '/login'
-}));
-
 
 
 app.get('/logout', function(req, res) {

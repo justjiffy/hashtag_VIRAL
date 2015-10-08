@@ -2,35 +2,40 @@
 <html>
 <head>
 	<title>OAuth App</title>
-
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-	<div class="link-to">LOGIN:</div>
-
-	<div class="link-to">
+<!-- SEARCH BAR -->
+<div id="nav">
+	<div id="logo-div">
+		<p>#VIRAL</p>
+	</div>
+	<div id="twit_search">
+		<form role="form" id="search-form">
+			<div class="form-group" id="search-bar">
+				<input type="text" name="search" class="form-control" id="search" value="" placeholder="Bananas" />
+			</div>
+			<button id="search-button">Gimme!</button>
+		</form>
+	</div>
+	<div id="link-to">
 		<% if(user != undefined) { %>
-				<h3>Below is the data sent by Facebook</h3>
-				<pre>
-					<%= user.fb %>
-				</pre>
+				<p>
+					<%= user.fb.email %>
+				</p>
 				<a href="/logout">Logout</a>
 			<% } else { %> 
 				<a href="/auth/facebook"><i class="fa fa-facebook-official fa-3x"></i></a>
 		<% } %>
-	</div>
-
-
-
-<!-- SEARCH BAR -->
-		<div id="twit_search">
-			<form id="search-form" action="/feeds/search" method="get">
-				<input type="text" name="search" id="search" value="" placeholder="Bananas" />
-				<button id="search-button">Gimme!</button>
-			</form>
-		</div>
+	</div>			
+</div>
 
 	
 
@@ -38,14 +43,45 @@
 <p id="test"></p>
 
 </div>
+
+<!-- MODAL EXAMPLE -->
+<!-- <button type="button" id="login-button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#loginModal" style="margin-top:100px">Login</button>
+
+Login Modal
+<div id="loginModal" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+
+    Modal content
+	    <div class="modal-content">
+			<div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <h4 class="modal-title">Login</h4>
+			</div>
+			<div class="modal-body">
+				<form role="form" action="/users/login" method="post">
+					<div class="form-group">
+						<input name="email" type="email" class="form-control" id="email" placeholder="Email">
+					</div>
+					<div class="form-group">
+						<input name="password" type="password" class="form-control" id="pwd" placeholder="Password">
+					</div>
+					<button type="submit" class="btn btn-default">Login</button>
+				</form>
+			</div>
+			<div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+	    </div>
+
+	</div>
+</div> -->
+
+
+
 <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/youtube.js"></script>
 
-<script> 
-
-</script>
 
 </body>
 </html>
