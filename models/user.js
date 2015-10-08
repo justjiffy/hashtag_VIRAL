@@ -8,25 +8,5 @@ module.exports = mongoose.model('User', {
 		lastName: String,
 		email: String
 	},
-
-	gh: {
-		id: String,
-		access_token: String,
-		email: String,
-		name: String
-	},
-
-	twit: {
-		id: String,
-		access_token: String,
-		email: String,
-		name: String
-	},
-
-	goog: {
-		id: String,
-		access_token: String,
-		email: String,
-		name: String
-	}
+	favorites: []
 });

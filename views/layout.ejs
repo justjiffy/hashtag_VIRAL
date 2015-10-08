@@ -26,7 +26,7 @@
 
 <!-- SEARCH BAR -->
 		<div id="twit_search">
-			<form id="search-form" action="/feeds/json" method="get">
+			<form id="search-form" action="/feeds/search" method="get">
 				<input type="text" name="search" id="search" value="" placeholder="Bananas" />
 				<button id="search-button">Gimme!</button>
 			</form>
@@ -34,61 +34,18 @@
 
 	
 
-<!-- INSTAGRAM and TWITTER FEEDS -->
-
-<div class="parallax" style="margin-top:50px">
-	<div id="insta_feed">
-		<% for(var i=0; i<show_count; i+=3) {%>
-				   
-		<img class="instagram-pic parallax_layer parallax_layer-back" style="background-image: url('<%= show_grams[i] %>'); background-size: 300px 300px; background-repeat: no-repeat; background-position: center; margin: -50px 50%" src="images/polaroid.png" />
-
-		<img class="instagram-pic parallax_layer parallax_layer-back" style="background-image: url('<%= show_grams[i+1] %>'); background-size: 300px 300px; background-repeat: no-repeat; background-position: center;  margin: 80% 0" src="images/polaroid.png" />
-
-		<img class="instagram-pic parallax_layer parallax_layer-back" style="background-image: url('<%= show_grams[i+2] %>'); background-size: 300px 300px; background-repeat: no-repeat; background-position: center;  margin: 150% 20%" src="images/polaroid.png" />
-
-		<div class="tweet parallax_layer parallax_layer-base"><p class="twit"><%= tweets.list[0].text %></p>
-	   	 </div>
-
-	   	 <div id="tweet" class="tweet parallax_layer parallax_layer-base" style="margin: 450px 50px"><p class="twit">
-	   	  <%= tweets.list[1].text %></p></div>
-
-	   	  <div class="tweet parallax_layer parallax_layer-base" style="margin: 900px 600px"><p class="twit">
-	   	   <%= tweets.list[2].text %></p></div>
-
-	   	  <div class="tweet parallax_layer parallax_layer-base" style="margin: 1200px 200px"><p class="twit">
-	   	   <%= tweets.list[3].text %></p></div>
-
-	   	  <div class="tweet parallax_layer parallax_layer-base" style="margin: 1500px 750px"><p class="twit">
-	   	   <%= tweets.list[4].text %></p></div>
-
-	   	   <div class="tweet parallax_layer parallax_layer-base" style="margin: 210px 500px"><p class="twit">
-	   	   <%= tweets.list[5].text %></p></div>
-
-	   	   <% } %>
-
-<!-- INSTAGRAM FEED -->
-	<div class="feed"><h3>Instagram Feed</h3>
-		<div id="insta_feed">
-		Img:
-			<% for(var i=0; i<show_count; i++) {%>
-				   <div class="instagram"><img class="instagram-pic" src="<%= show_grams[i] %>"/><img class="frame" src="images/polaroid.png" /></div>
-			<% } %>
-		</div>
-	</div>
-
-<!-- YOUTUBE FEED -->
-	<div class="feed">
-		<h3>YouTube Feed</h3>
-		<div id="youtube_feed">
-
-		</div>
-	</div>
+<!-- RENDER FEEDS -->
+<p id="test"></p>
 
 </div>
-<script src="http://code.jquery.com/ui/1.11.4/jqueryui/1.11.4/jquery-ui.js"></script>
+<script src="https://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/youtube.js"></script>
+
+<script> 
+
+</script>
 
 </body>
 </html>
