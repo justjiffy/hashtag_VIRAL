@@ -60,7 +60,7 @@ body {
 }
 
 .link-to a, a:visited, a:active {
-	color: yellow;
+	color: blue;
 }
 
 .link-to a:hover {
