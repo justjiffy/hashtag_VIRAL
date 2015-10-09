@@ -13,7 +13,7 @@ feedsController.get('/', function(req, res){
 });
 
 feedsController.get('/feeds/search', function(req, res) {
-	var search = req.query.search;
+	var search = req.query.search.replace(/[ ]/g, '');
 	var twitter = {name: 'twitter', feed: []};
 	var instagram = {name: 'instagram', feed: []};
 	var youtube = {name: 'youtube', feed: []};

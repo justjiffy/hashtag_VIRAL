@@ -33,7 +33,7 @@ $(document).ready(function() {
 
 $('#search-button').click(function(e) {
 	e.preventDefault();
-	var the_search = $('#search').val();
+	var the_search = $('#search').val().replace(/[ ]/g, '');
 	$.get("feeds/search?search="+the_search, function(data) {
 		$('#one, #two, #three, #four, #five, #gram1, #gram2, #gram3, #tube1, #tube2, #tube3').html("");
 	
