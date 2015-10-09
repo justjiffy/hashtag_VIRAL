@@ -112,12 +112,12 @@ body {
 
 .tube {
   width: 450px;
-  height: 450px;
-  padding-left: 15px;
-  padding-top: -50px;
+  height: 520px;
+  padding-left: 50px;
+  padding-bottom: 110px;
   background-repeat: no-repeat; 
   background-position: center center; 
-  background-size: 290px 250px;
+  background-size: 260px 240px;
 }
 
 .film {
@@ -134,25 +134,40 @@ body {
 #one { margin-top: 70px; margin-left: 10px; }
 #gram1 { margin-top: 0; margin-left: 650px; }
 
-#two{ margin-top: 570px; margin-left: 400px; }
+#tube1 { margin-top: 300px; margin-left: 20px; }
+
+#two{ margin-top: 570px; margin-left: 600px; }
 
 #three{ margin-top: 950px; margin-left: 700px; }
+#tube2 { margin-top: 1200px; margin-left: 650px; }
 
-#four { margin-top: 1200px; margin-left: 270px; }
-#gram2 { margin-top: 750px; margin-left: 50px; }
+#gram2 { margin-top: 850px; margin-left: 150px; }
+#four { margin-top: 1400px; margin-left: 70px; }
 
-#five { margin-top: 1600px; margin-left: 30px; }
+#five { margin-top: 1800px; margin-left: 30px; }
 
-#six { margin-top: 2100px; margin-left: 360px; }
-#gram3 { margin-top: 1500px; margin-left: 650px; }
+#gram3 { margin-top: 1700px; margin-left: 650px; }
 
-#tube1 { margin-top: 2500px; margin-left: 75px; }
+#tube3 { margin-top: 2100px; margin-left: 250px; }
+#six { margin-top: 2600px; margin-left: 360px; }
 
+
+.tilt_7 {
+	-ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+    transform: rotate(7deg);
+}
 
 .tilt_15 {
 	-ms-transform: rotate(15deg); /* IE 9 */
     -webkit-transform: rotate(15deg); /* Chrome, Safari, Opera */
     transform: rotate(15deg);
+}
+
+.tiltBack_7 {
+	-ms-transform: rotate(-7deg); /* IE 9 */
+    -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+    transform: rotate(-7deg);
 }
 
 .tiltBack_15 {
