@@ -96,7 +96,7 @@ $('#one').click(function (e) {
 	$('#twitterModal').modal();
 	$('#tweetText').empty().append(one.text);
 	$('#twitProfilePic').empty().append("<img src='" + one.user.profile_image_url + "'>");
-	$('#twitUser').empty().append("<a href='//www.twitter.com/" + one.user.screen_name + "'>" + one.user.screen_name + "</a>");
+	$('#twitUser').empty().append("<a target='_blank' href='//www.twitter.com/" + one.user.screen_name + "'>" + one.user.screen_name + "</a>");
 });
 
 $('#two').click(function (e) {
@@ -106,7 +106,7 @@ $('#two').click(function (e) {
 	$('#twitterModal').modal();
 	$('#tweetText').empty().append(two.text);
 	$('#twitProfilePic').empty().append("<img src='" + two.user.profile_image_url + "'>");
-	$('#twitUser').empty().append("<a href='//www.twitter.com/" + two.user.screen_name + "'>" + two.user.screen_name + "</a>");
+	$('#twitUser').empty().append("<a target='_blank' href='//www.twitter.com/" + two.user.screen_name + "'>" + two.user.screen_name + "</a>");
 });
 
 $('#three').click(function (e) {
@@ -116,7 +116,7 @@ $('#three').click(function (e) {
 	$('#twitterModal').modal();
 	$('#tweetText').empty().append(three.text);
 	$('#twitProfilePic').empty().append("<img src='" + three.user.profile_image_url + "'>");
-	$('#twitUser').empty().append("<a href='//www.twitter.com/" + three.user.screen_name + "'>" + three.user.screen_name + "</a>");
+	$('#twitUser').empty().append("<a target='_blank' href='//www.twitter.com/" + three.user.screen_name + "'>" + three.user.screen_name + "</a>");
 });
 
 $('#four').click(function (e) {
@@ -126,7 +126,7 @@ $('#four').click(function (e) {
 	$('#twitterModal').modal();
 	$('#tweetText').empty().append(four.text);
 	$('#twitProfilePic').empty().append("<img src='" + four.user.profile_image_url + "'>");
-	$('#twitUser').empty().append("<a href='//www.twitter.com/" + four.user.screen_name + "'>" + four.user.screen_name + "</a>");
+	$('#twitUser').empty().append("<a target='_blank' href='//www.twitter.com/" + four.user.screen_name + "'>" + four.user.screen_name + "</a>");
 });
 
 $('#five').click(function (e) {
@@ -137,7 +137,7 @@ $('#five').click(function (e) {
 	$('#twitterModal').modal();
 	$('#tweetText').empty().append(five.text);
 	$('#twitProfilePic').empty().append("<img src='" + five.user.profile_image_url + "'>");
-	$('#twitUser').empty().append("<a href='//www.twitter.com/" + five.user.screen_name + "'>" + five.user.screen_name + "</a>");
+	$('#twitUser').empty().append("<a target='_blank' href='//www.twitter.com/" + five.user.screen_name + "'>" + five.user.screen_name + "</a>");
 });
 
 
@@ -150,7 +150,7 @@ $('#gram1').click(function (e) {
 	$('#gram-pic').empty().append("<img src='" + gram1.images.low_resolution.url + "'>");
 	$('#gramCaption').empty().append(gram1.caption.text);
 	$('#gramUserProfilePic').empty().append("<img style='width:48px;height' src='" + gram1.user.profile_picture + "'>");
-	$('#gramUser').empty().append("<a href='//www.instagram.com/" + gram1.user.username + "'>" + gram1.user.username + "</a>");
+	$('#gramUser').empty().append("<a target='_blank' href='//www.instagram.com/" + gram1.user.username + "'>" + gram1.user.username + "</a>");
 });
 
 $('#gram2').click(function (e) {
@@ -161,7 +161,7 @@ $('#gram2').click(function (e) {
 	$('#gram-pic').empty().append("<img src='" + gram2.images.low_resolution.url + "'>");
 	$('#gramCaption').empty().append(gram2.caption.text);
 	$('#gramUserProfilePic').empty().append("<img style='width:48px;height' src='" + gram2.user.profile_picture + "'>");
-	$('#gramUser').empty().append("<a href='//www.instagram.com/" + gram2.user.username + "'>" + gram2.user.username + "</a>");
+	$('#gramUser').empty().append("<a target='_blank' href='//www.instagram.com/" + gram2.user.username + "'>" + gram2.user.username + "</a>");
 });
 
 $('#gram3').click(function (e) {
@@ -172,7 +172,7 @@ $('#gram3').click(function (e) {
 	$('#gram-pic').empty().append("<img src='" + gram3.images.low_resolution.url + "'>");
 	$('#gramCaption').empty().append(gram3.caption.text);
 	$('#gramUserProfilePic').empty().append("<img style='width:48px;height' src='" + gram3.user.profile_picture + "'>");
-	$('#gramUser').empty().append("<a href='//www.instagram.com/" + gram3.user.username + "'>" + gram3.user.username + "</a>");
+	$('#gramUser').empty().append("<a target='_blank' href='//www.instagram.com/" + gram3.user.username + "'>" + gram3.user.username + "</a>");
 });
 
 
@@ -184,7 +184,7 @@ $('#tube1').click(function (e) {
 	$('#youtubeModal').modal();
 	$('#videoTitle').empty().append(tube1.snippet.title);
 	$('#modalVideo').empty().append("<iframe width='575' height='323' src='//www.youtube.com/embed/" + tube1.id + "'></iframe>");
-	$('#youtube-user').empty().append(tube1.snippet.channelTitle);
+	$('#youtube-user').empty().append("<a target='_blank' href='//youtube.com/channel/" + tube1.snippet.channelId + "'>" + tube1.snippet.channelTitle + "</a>");
 	$('#videoDescription').empty().append(tube1.snippet.description);
 });
 
@@ -195,7 +195,7 @@ $('#tube2').click(function (e) {
 	$('#youtubeModal').modal();
 	$('#videoTitle').empty().append(tube2.snippet.title);
 	$('#modalVideo').empty().append("<iframe width='575' height='323' src='//www.youtube.com/embed/" + tube2.id + "'></iframe>");
-	$('#youtube-user').empty().append(tube2.snippet.channelTitle);
+	$('#youtube-user').empty().append("<a target='_blank' href='//youtube.com/channel/" + tube2.snippet.channelId + "'>" + tube2.snippet.channelTitle + "</a>");
 	$('#videoDescription').empty().append(tube2.snippet.description);
 });
 
@@ -206,7 +206,7 @@ $('#tube3').click(function (e) {
 	$('#youtubeModal').modal();
 	$('#videoTitle').empty().append(tube3.snippet.title);
 	$('#modalVideo').empty().append("<iframe width='575' height='323' src='//www.youtube.com/embed/" + tube3.id + "'></iframe>");
-	$('#youtube-user').empty().append(tube3.snippet.channelTitle);
+	$('#youtube-user').empty().append("<a target='_blank' href='//youtube.com/channel/" + tube3.snippet.channelId + "'>" + tube3.snippet.channelTitle + "</a>");
 	$('#videoDescription').empty().append(tube3.snippet.description);
 });
 
