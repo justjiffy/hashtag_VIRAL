@@ -20,22 +20,23 @@
 	</div>
 	<div id="twit_search">
 		<form role="form" id="search-form">
-			<div class="form-group" id="search-bar">
-				<input type="text" name="search" class="form-control" id="search" value="" placeholder="Bananas" />
+			<div class="form-group right-inner-addon" id="search-bar">
+				<a style="color: red" href=""><i class="fa fa-heart"></i></a>
+				<input type="text" name="search" class="form-control" id="search" value="" placeholder="bananas!" />
+				
 			</div>
-			<button id="search-button">Gimme!</button>
+			<a id="search-button"><i class="fa fa-search fa-2x"></i></a>
 		</form>
 	</div>
 		<div id="link-to" style="float: right">
-			<a style="margin-right: 25px" href=""><i class="fa fa-user fa-3x"></i></a>
-			<a style="margin-right: 25px" href=""><i class="fa fa-heart fa-3x"></i></a>
-				<% if(user != undefined) { %>
+<!-- 			<a style="margin-right: 25px" href=""><i class="fa fa-user fa-3x"></i></a>
+ -->				<% if(user != undefined) { %>
 					<p style="display:inline; font-size: 28px; font-weight: bold; color: white;">
 						Hey <%= user.fb.firstName %>!!
 					</p>
 					<a href="/logout"><i class="fa fa-times fa-3x"></i></a>
 				<% } else { %> 
-					<a href="/auth/facebook"><i class="fa fa-facebook-official fa-3x"></i></a>
+					<a href="/auth/facebook"><i class="fa fa-user fa-3x"></i></a>
 				<% } %>
 		</div>			
 </div>
@@ -140,6 +141,9 @@
 
 	</div>
 </div>
+
+<!-- SIDE BAR -->
+
 
 <!-- FOOTER -->
 <div width="100%">

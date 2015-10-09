@@ -34,15 +34,30 @@ body {
 #nav a:hover {
 	color: #ffbb00;
 }
+
+.right-inner-addon {
+    position: relative;
+}
+.right-inner-addon input {
+    padding-right: 30px;    
+}
+.right-inner-addon i {
+    position: absolute;
+    right: 0px;
+    padding: 10px 12px;
+    pointer-events: none;
+}
+
 #logo-div {
 	width: 24%;
 	height: 100%;
 	display: inline-block;
+	padding-left: 20px;
 }
 
 #twit_search {
 	text-align: center;
-	width: 45%;
+	width: 65%;
 	height: 100%;
 	/*position: absolute;*/
 	/*top: 0;*/
@@ -57,12 +72,15 @@ body {
 
 #search-button {
 	display: inline-block;
+	background-color: transparent;
+	border: 0;
+	overflow: visible;
+	padding-left: 10px
 }
 
 #link-to {
 	text-align: right;
-	padding-top: 20px;
-	width: 24%;
+	padding-top: 10px;
 	height: 100%;
 	/*color: white;*/
 	display: inline-block;
