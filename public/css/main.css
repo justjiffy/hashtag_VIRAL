@@ -9,25 +9,29 @@ html {
 	height: 3000px;
 }
 
+a, li, #logo {
+	cursor: pointer;
+}
 body {
 	background-color: #6df0ff;
 	margin: 0 auto;
 	overflow-x: hidden;
+	background-image: url('../images/background.png');
 }
 
 #nav {
 	width: 100%;
-	height: 10%;
+	height: 125px;
 	position: fixed;
-	background-color: rgba(65, 65, 65, 0.0);
-	margin-top: -50px;
-	padding: 0;
+	background-color: rgba(255, 255, 255, 0.3);
+	top: 0;
+	padding-top: 25px;
 	z-index: 100;
 	padding-right: 50px;
 }
 
 #nav a, a:active, a:visited {
-	color: white;
+	color: black;
 	text-decoration: none;
 }
 
