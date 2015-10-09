@@ -103,11 +103,11 @@ body {
 .instagram-pic {
   width: 375px;
   height: 375px;
-  padding-left: 25px;
-  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-top: 20px;
   background-repeat: no-repeat; 
   background-position: center; 
-  background-size: 82%;
+  background-size: 75%;
 }
 
 .tube {
