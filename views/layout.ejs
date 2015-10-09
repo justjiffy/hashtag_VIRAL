@@ -26,16 +26,18 @@
 			<button id="search-button">Gimme!</button>
 		</form>
 	</div>
-	<div id="link-to">
-		<% if(user != undefined) { %>
-				<p style="display:inline">
-					<%= user.fb.firstName %>
-				</p>
-				<a href="/logout"><i class="fa fa-times fa-2x"></i></a>
-			<% } else { %> 
-				<a href="/auth/facebook"><i class="fa fa-facebook-official fa-3x"></i></a>
-		<% } %>
-	</div>			
+		<div id="link-to" style="float: right">
+			<a style="margin-right: 25px" href=""><i class="fa fa-user fa-3x"></i></a>
+			<a style="margin-right: 25px" href=""><i class="fa fa-heart fa-3x"></i></a>
+				<% if(user != undefined) { %>
+					<p style="display:inline; font-size: 28px; font-weight: bold; color: white;">
+						Hey <%= user.fb.firstName %>!!
+					</p>
+					<a href="/logout"><i class="fa fa-times fa-3x"></i></a>
+				<% } else { %> 
+					<a href="/auth/facebook"><i class="fa fa-facebook-official fa-3x"></i></a>
+				<% } %>
+		</div>			
 </div>
 
 
@@ -49,7 +51,7 @@
 	  <li class="layer t" data-depth="0.80" id="three"></li>
 	  <li class="layer t" data-depth="0.70" id="four"><li>
 	  <li class="layer t" data-depth="0.60" id="five"></li>
-	  <li class="layer t" data-depth="0.10" id="six"><img src="images/mascot.png" width="20%" /></li>
+	  <li class="layer t" data-depth="0.10" id="six"><img id="mascot" src="images/mascot.png" width="20%" /></li>
 
 	  <!-- GRAMS -->
 	  <li class="layer i" data-depth="0.70" id="gram1"></li>
@@ -143,7 +145,7 @@
 <div width="100%">
 	<img style="position: absolute; top: 3200px; repeat: repeat-x; overflow: hidden; right:0" src="images/grass.png" width="55%"/>
 	<img style="position: absolute; top: 3200px; repeat: repeat-x; overflow: hidden;" src="images/grass.png" width="55%"/>
-	<img id="click_me" src="images/click_me.png" style="position: absolute; top: 0" />
+	<img id="click_me" src="images/click_me.png" style="position: absolute; top: 0; z-index: 100;"  />
 	<img src="images/trampoline.png" width="50%" style="margin-left: 25%; margin-right: 30%; z-index:-1; position: absolute; top: 3025px;" />
 </div>
 
