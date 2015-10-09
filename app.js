@@ -11,7 +11,9 @@ var twitter = require('twit');
 
 
 // Mongoose Setup
-mongoose.connect('mongodb://localhost:27017/facebook-authentication-app');
+// mongoose.connect('mongodb://localhost:27017/facebook-authentication-app');
+mongoose.connet('mongodb://justinhongj:figtree2@ds051923.mongolab.com:51923/heroku_k642r8vr');
+
 
 // Middleware
 app.use( cookieParser() );
