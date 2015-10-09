@@ -4,6 +4,7 @@
 	<title>OAuth App</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700italic,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -43,22 +44,22 @@
 
 	<ul id="scene">
 	<!-- TWEETS -->	
-	  <li class="layer t" data-depth="0.60" id="one"></li>
-	  <li class="layer t" data-depth="0.70" id="two"></li>
+	  <li class="layer t" data-depth="0.90" id="one"></li>
+	  <li class="layer t" data-depth="0.40" id="two"></li>
 	  <li class="layer t" data-depth="0.80" id="three"></li>
-	  <li class="layer t" data-depth="0.60" id="four"><li>
-	  <li class="layer t" data-depth="0.70" id="five"></li>
-	  <li class="layer t" data-depth="0.60" id="six"><img src="images/bird.png" width="50%"/></li>
+	  <li class="layer t" data-depth="0.70" id="four"><li>
+	  <li class="layer t" data-depth="0.60" id="five"></li>
+	  <li class="layer t" data-depth="0.10" id="six"><img src="images/mascot.png" width="20%" /></li>
 
 	  <!-- GRAMS -->
-	  <li class="layer i" data-depth="0.30" id="gram1"></li>
-	  <li class="layer i" data-depth="0.40" id="gram2"></li>
-	  <li class="layer i" data-depth="0.30" id="gram3"></li>
+	  <li class="layer i" data-depth="0.70" id="gram1"></li>
+	  <li class="layer i" data-depth="0.60" id="gram2"></li>
+	  <li class="layer i" data-depth="0.70" id="gram3"></li>
 
 	  <!-- TUBES -->
-	  <li class="layer y" data-depth="0.15" id="tube1"></li>
-  	  <li class="layer y" data-depth="0.15" id="tube2"></li>
-  	  <li class="layer y" data-depth="0.15" id="tube3"></li>
+	  <li class="layer y" data-depth="0.35" id="tube1"></li>
+  	  <li class="layer y" data-depth="0.45" id="tube2"></li>
+  	  <li class="layer y" data-depth="0.55" id="tube3"></li>
 
 	</ul>
 
@@ -139,9 +140,12 @@
 </div>
 
 <!-- FOOTER -->
-	<div style="position: absolute; top: 3900px; background-image: url('images/grass.png'); background-repeat: repeat-x; background-size: 60%; width: 100%; background-position: center bottom">
-		<img src="images/trampoline.png" width="40%" style="margin-left: 30%; margin-right: 30%" />
-	</div>
+<div width="100%">
+	<img style="position: absolute; top: 3000px; repeat: repeat-x; overflow: hidden; right:0" src="images/grass.png" width="50%"/>
+	<img style="position: absolute; top: 3000px; repeat: repeat-x; overflow: hidden;" src="images/grass.png" width="50%"/>
+	<img id="click_me" src="images/click_me.png" style="position: absolute; top: 2800px" />
+	<img src="images/trampoline.png" width="45%" style="margin-left: 30%; margin-right: 30%; z-index:-1; position: absolute; top: 2875px;" />
+</div>
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/parallax/1.1.1/jquery.parallax.min.js"></script>
 <script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>

@@ -5,7 +5,7 @@ $(document).ready(function() {
 			one = data[0].feed[i];
 			$('#gram1').append( "<img class='instagram-pic tilt_15' style='background-image: url(" + data[1].feed.data[i].images.thumbnail.url + ")' src='images/polaroid.png' />" );
 			gram1 = data[1].feed.data[i];
-			$('#two').append( "<div class='tweet'><p class='twit'>" + data[0].feed[i+1].text + "</p>" );
+			$('#two').append( "<div class='tweet2'><p class='twit'>" + data[0].feed[i+1].text + "</p>" );
 			two = data[0].feed[i+1];
 			$('#gram2').append( "<img class='instagram-pic tiltBack_15' style='background-image: url(" + data[1].feed.data[i+1].images.thumbnail.url + ")' src='images/polaroid.png' />" );
 			gram2 = data[1].feed.data[i+1];
@@ -15,13 +15,13 @@ $(document).ready(function() {
 			gram3 = data[1].feed.data[i+2];
 			$('#four').append( "<div class='tweet'><p class='twit'>" + data[0].feed[i+3].text + "</p>" );
 			four = data[0].feed[i+3];
-			$('#five').append( "<div class='tweet'><p class='twit'>" + data[0].feed[i+4].text + "</p>" );
+			$('#five').append( "<div class='tweet2'><p class='twit'>" + data[0].feed[i+4].text + "</p>" );
 			five = data[0].feed[i+=4];
 			$('#tube1').append( "<img class='tube tiltBack_7' style='background-image: url(" + data[2].feed.items[i].snippet.thumbnails.medium.url + ")' src='images/tv1.png' />" );
 			tube1 = data[2].feed.items[i];
 			$('#tube2').append( "<img class='tube tilt_15' style='background-image: url(" + data[2].feed.items[1].snippet.thumbnails.medium.url + ")' src='images/tv1.png' />" );
 			tube2 = data[2].feed.items[1];
-			$('#tube3').append( "<img class='tube tiltBack_7' style='background-image: url(" + data[2].feed.items[2].snippet.thumbnails.medium.url + ")' src='images/tv1.png' />" );
+			$('#tube3').append( "<img class='tube tiltBack_7' style='background-image: url(" + data[2].feed.items[2].snippet.thumbnails.medium.url + ")' src='images/tv2.png' />" );
 			tube3 = data[2].feed.items[2];
 
 		}
@@ -58,7 +58,7 @@ $('#search-button').click(function(e) {
 			tube1 = data[2].feed.items[i];
 			$('#tube2').append( "<img class='tube tilt_15' style='background-image: url(" + data[2].feed.items[1].snippet.thumbnails.medium.url + ")' src='images/tv1.png' />" );
 			tube2 = data[2].feed.items[1];
-			$('#tube3').append( "<img class='tube tiltBack_7' style='background-image: url(" + data[2].feed.items[2].snippet.thumbnails.medium.url + ")' src='images/tv1.png' />" );
+			$('#tube3').append( "<img class='tube tiltBack_7' style='background-image: url(" + data[2].feed.items[2].snippet.thumbnails.medium.url + ")' src='images/tv2.png' />" );
 			tube3 = data[2].feed.items[2];
 		}
 	});
@@ -72,6 +72,10 @@ $('#scene').parallax({
 	scalarY: 80,
 });
 
+//trampoline 
+$('#mascot').click(function() {
+	$('#click_me').show();
+});
 
 // Twitter modals
 $('#one').click(function (e) {

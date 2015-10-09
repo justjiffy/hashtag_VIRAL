@@ -1,5 +1,5 @@
 * {
-	font-family: tahoma;
+	font-family: 'Open Sans', sans-serif, tahoma;
 
 }
 
@@ -68,6 +68,10 @@ body {
 	color: orange;
 }
 
+#mascot {
+	z-index: 1000;
+}
+
 .feed {
 	background-color: #7fd0ff;
 	clear: both;
@@ -85,13 +89,20 @@ body {
 	height: 270px;
 }
 
+.tweet2 {
+	background-image: url('../images/cloud2.png'); 
+	background-size: cover;
+	width: 400px; 
+	height: 270px;
+}
+
 .twit {
 	position: relative;
 	text-align: center;;
 	padding-top: 27%;
 	padding-left: 22%;
 	height: 200px;
-	width: 250px;
+	width: 300px;
 }
 
 .frame {
@@ -130,6 +141,10 @@ body {
     transform: rotate(45deg);
 }
 
+#click_me {
+	display: none;
+}
+
 #scene { margin-top: 50px; width: 1000px; }
 
 #one { margin-top: 70px; margin-left: 10px; }
@@ -150,7 +165,7 @@ body {
 #gram3 { margin-top: 1700px; margin-left: 650px; }
 
 #tube3 { margin-top: 2100px; margin-left: 250px; }
-#six { margin-top: 2600px; margin-left: 360px; }
+#six { margin-top: 2600px; margin-left: 45%; }
 
 
 .tilt_7 {
