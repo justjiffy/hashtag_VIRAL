@@ -72,6 +72,11 @@ $('#scene').parallax({
 	scalarY: 80,
 });
 
+//logo refresh
+$('#logo').click(function() {
+	location.reload();
+})
+
 //trampoline 
 $('#mascot').hover(function() {
 	$('#click_me').toggle();

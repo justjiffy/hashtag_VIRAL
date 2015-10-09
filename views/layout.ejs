@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>OAuth App</title>
+	<title>#VIRAL</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" 
+      type="image/png" 
+      href="images/mascot.png">	
+
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700italic,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -16,34 +20,33 @@
 <!-- SEARCH BAR -->
 <div id="nav">
 	<div id="logo-div">
-		<p><img src="images/viral.png" width="100%" /></p>
+		<p><img id="logo" src="images/viral.png" width="100%" /></p>
 	</div>
 	<div id="twit_search">
 		<form role="form" id="search-form">
-			<div class="form-group" id="search-bar">
-				<input type="text" name="search" class="form-control" id="search" value="" placeholder="Bananas" />
+			<div class="form-group right-inner-addon" id="search-bar">
+				<a style="color: red" href=""><i class="fa fa-heart"></i></a>
+				<input type="text" name="search" class="form-control" id="search" value="" placeholder="bananas!" />
+				
 			</div>
-			<button id="search-button">Gimme!</button>
+			<a id="search-button"><i class="fa fa-search fa-2x"></i></a>
 		</form>
 	</div>
 		<div id="link-to" style="float: right">
-			<a style="margin-right: 25px" href=""><i class="fa fa-user fa-3x"></i></a>
-			<a style="margin-right: 25px" href=""><i class="fa fa-heart fa-3x"></i></a>
-				<% if(user != undefined) { %>
-					<p style="display:inline; font-size: 28px; font-weight: bold; color: white;">
+<!-- 			<a style="margin-right: 25px" href=""><i class="fa fa-user fa-3x"></i></a>
+ -->				<% if(user != undefined) { %>
+					<p style="display:inline; font-size: 28px; font-weight: bold; color: white; position: absolute; right: 50px">
 						Hey <%= user.fb.firstName %>!!
+					<a href="/logout"><i class="fa fa-times"></i></a>
 					</p>
-					<a href="/logout"><i class="fa fa-times fa-3x"></i></a>
 				<% } else { %> 
-					<a href="/auth/facebook"><i class="fa fa-facebook-official fa-3x"></i></a>
+					<a href="/auth/facebook"><i class="fa fa-user fa-3x"></i></a>
 				<% } %>
 		</div>			
 </div>
 
 
 <!-- RENDER FEEDS -->
-	<img src="images/film.png" style="z-index: -1" class="film"/>
-
 	<ul id="scene">
 	<!-- TWEETS -->	
 	  <li class="layer t" data-depth="0.90" id="one"></li>
@@ -140,6 +143,9 @@
 
 	</div>
 </div>
+
+<!-- SIDE BAR -->
+
 
 <!-- FOOTER -->
 <div width="100%">
