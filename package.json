@@ -22,5 +22,11 @@
     "scrollmagic": "^2.0.5",
     "skrollr": "^0.6.26",
     "twit": "^2.1.0"
+  },
+  "engines": {
+    "node": "1.6.2"
+  },
+  "scripts": {
+    "start": "node app.js"
   }
 }
