@@ -78,7 +78,8 @@ $('#mascot').hover(function() {
 });
 
 $('#mascot').click(function() {
-	var backUp = function() { $('html, body').animate({scrollTop : 0},800) };
+	var reapper = function() {$('#mascot').show();};
+	var backUp = function() { $('html, body').animate({scrollTop : 0},800, reapper) };
 	$('#mascot').toggle("bounce", { times: 3 }, "slow", backUp);
 });
 
