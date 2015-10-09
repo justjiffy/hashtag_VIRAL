@@ -78,7 +78,8 @@ $('#mascot').hover(function() {
 });
 
 $('#mascot').click(function() {
-	$(document).scrollTop( 0 );
+	var backUp = function() { $('html, body').animate({scrollTop : 0},800) };
+	$('#mascot').toggle("bounce", { times: 3 }, "slow", backUp);
 });
 
 // Twitter modals

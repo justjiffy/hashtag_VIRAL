@@ -26,6 +26,14 @@ body {
 	padding-right: 50px;
 }
 
+#nav a, a:active, a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+#nav a:hover {
+	color: #ffbb00;
+}
 #logo-div {
 	width: 24%;
 	height: 100%;
@@ -34,7 +42,7 @@ body {
 
 #twit_search {
 	text-align: center;
-	width: 51%;
+	width: 45%;
 	height: 100%;
 	/*position: absolute;*/
 	/*top: 0;*/

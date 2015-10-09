@@ -26,16 +26,18 @@
 			<button id="search-button">Gimme!</button>
 		</form>
 	</div>
-	<div id="link-to">
-		<% if(user != undefined) { %>
-				<p style="display:inline">
-					<%= user.fb.firstName %>
-				</p>
-				<a href="/logout"><i class="fa fa-times fa-2x"></i></a>
-			<% } else { %> 
-				<a href="/auth/facebook"><i class="fa fa-facebook-official fa-3x"></i></a>
-		<% } %>
-	</div>			
+		<div id="link-to" style="float: right">
+			<a style="margin-right: 25px" href=""><i class="fa fa-user fa-3x"></i></a>
+			<a style="margin-right: 25px" href=""><i class="fa fa-heart fa-3x"></i></a>
+				<% if(user != undefined) { %>
+					<p style="display:inline; font-size: 28px; font-weight: bold; color: white;">
+						Hey <%= user.fb.firstName %>!!
+					</p>
+					<a href="/logout"><i class="fa fa-times fa-3x"></i></a>
+				<% } else { %> 
+					<a href="/auth/facebook"><i class="fa fa-facebook-official fa-3x"></i></a>
+				<% } %>
+		</div>			
 </div>
 
 
