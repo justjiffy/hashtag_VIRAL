@@ -26,6 +26,14 @@ body {
 	padding-right: 50px;
 }
 
+#nav a, a:active, a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+#nav a:hover {
+	color: #ffbb00;
+}
 #logo-div {
 	width: 24%;
 	height: 100%;
@@ -34,7 +42,7 @@ body {
 
 #twit_search {
 	text-align: center;
-	width: 51%;
+	width: 45%;
 	height: 100%;
 	/*position: absolute;*/
 	/*top: 0;*/
@@ -141,9 +149,6 @@ body {
     transform: rotate(45deg);
 }
 
-#click_me {
-	display: none;
-}
 
 #scene { margin-top: 50px; width: 1000px; }
 
@@ -166,6 +171,8 @@ body {
 
 #tube3 { margin-top: 2100px; margin-left: 250px; }
 #six { margin-top: 2800px; margin-left: 55%; }
+
+#click_me { margin-top: 2700px; margin-left: 55%; display: none;}
 
 
 .tilt_7 {
