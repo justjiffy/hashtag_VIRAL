@@ -14,7 +14,7 @@ var twitter = require('twit');
 // mongoose.connect('mongodb://localhost:27017/facebook-authentication-app');
 // mongoose.connect('mongodb://project3:project3@ds051923.mongolab.com:51923/heroku_k642r8vr');
 var mongoUri =  process.env.MONGOLAB_URI || 'mongodb://localhost:27017/facebook-authentication-app';
-moongoose.connect(mongoUri);
+mongoose.connect(mongoUri);
 
 
 // Middleware
