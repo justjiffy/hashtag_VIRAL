@@ -135,6 +135,17 @@ $('#gram3').click(function (e) {
 });
 
 
+// YouTube Modals
+$('#tube1').click(function (e) {
+	e.preventDefault();
+	console.log(e);
+
+	$('#youtubeModal').modal();
+	$('#videoTitle').empty().append(tube1.snippet.title);
+	$('#modalVideo').empty().append("<iframe width='575' height='323' src='//www.youtube.com/embed/" + tube1.id + "'></iframe>");
+	$('#youtube-user').empty().append(tube1.snippet.channelTitle);
+	$('#videoDescription').empty().append(tube1.snippet.description);
+});
 
 
 
@@ -147,8 +158,9 @@ $('#gram3').click(function (e) {
 
 
 
-
-
+// <iframe width="420" height="315"
+// src="http://www.youtube.com/embed/XGSy3_Czz8k?autoplay=1">
+// </iframe>
 
 
 
