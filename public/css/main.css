@@ -141,9 +141,6 @@ body {
     transform: rotate(45deg);
 }
 
-#click_me {
-	display: none;
-}
 
 #scene { margin-top: 50px; width: 1000px; }
 
@@ -166,6 +163,8 @@ body {
 
 #tube3 { margin-top: 2100px; margin-left: 250px; }
 #six { margin-top: 2800px; margin-left: 55%; }
+
+#click_me { margin-top: 2700px; margin-left: 55%; display: none;}
 
 
 .tilt_7 {

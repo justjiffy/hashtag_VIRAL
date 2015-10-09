@@ -15,7 +15,7 @@ $(document).ready(function() {
 			gram3 = data[1].feed.data[i+2];
 			$('#four').append( "<div class='tweet'><p class='twit'>" + data[0].feed[i+3].text + "</p>" );
 			four = data[0].feed[i+3];
-			$('#five').append( "<div class='tweet2'><p class='twit'>" + data[0].feed[i+4].text + "</p>" );
+			$('#five').append( "<div class='tweet2'><p class='twit'>" + "Tweet tweet tweet...! Search for something fun!!!" + "</p>" );
 			five = data[0].feed[i+=4];
 			$('#tube1').append( "<img class='tube tiltBack_7' style='background-image: url(" + data[2].feed.items[i].snippet.thumbnails.medium.url + ")' src='images/tv1.png' />" );
 			tube1 = data[2].feed.items[i];
@@ -73,8 +73,12 @@ $('#scene').parallax({
 });
 
 //trampoline 
+$('#mascot').hover(function() {
+	$('#click_me').toggle();
+});
+
 $('#mascot').click(function() {
-	$('#click_me').show();
+	$(document).scrollTop( 0 );
 });
 
 // Twitter modals
