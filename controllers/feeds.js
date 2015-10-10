@@ -20,12 +20,15 @@ feedsController.get('/feeds/search', function(req, res) {
 
 	T.get('search/tweets', { q: search, count: 20, language: 'en' },
 		function(err, data, response) {
+			console.log(search);
 			var tweets_list = data.statuses;
 			// res.json(tweets_list);
 
 			twitter.feed = tweets_list;
 
 			request('https://api.instagram.com/v1/tags/' + search + '/media/recent?count=20&client_id=cd52513b4ad04996b712dd40ff523962', function(error, response, body) {
+			if (search === "") { console.log('bad search request') }
+			else 
 				var grams = JSON.parse(body);
 				instagram.feed = grams;
 
@@ -39,17 +42,19 @@ feedsController.get('/feeds/search', function(req, res) {
 			});
 	});
 
-
 });
 
 feedsController.get('/feeds', function(req, res) {
-	// var search = req.query.search;
+	var search = req.query.search;
 	var twitter = {name: 'twitter', feed: []};
 	var instagram = {name: 'instagram', feed: []};
 	var youtube = {name: 'youtube', feed: []};
 
 	T.get('search/tweets', { q: '&nbsp;', result_type: 'popular', count: 20, language: 'en'},
 		function(err, data, response) {
+			// console.log(search);
+			// if (search === "") { console.log('here is the bug') }
+			// else
 			var tweets_list = data.statuses;
 			// res.json(tweets_list);
 

@@ -23,10 +23,8 @@ $(document).ready(function() {
 			tube2 = data[2].feed.items[1];
 			$('#tube3').append( "<img class='tube tiltBack_7' style='background-image: url(" + data[2].feed.items[2].snippet.thumbnails.medium.url + ")' src='images/tv2.png' />" );
 			tube3 = data[2].feed.items[2];
-
 		}
 	});
-
 });
 
 
@@ -91,7 +89,7 @@ $('#mascot').click(function() {
 // Twitter modals
 $('#one').click(function (e) {
 	e.preventDefault();
-	console.log(e);
+	// console.log(e);
 
 	$('#twitterModal').modal();
 	$('#tweetText').empty().append(one.text);
@@ -101,7 +99,7 @@ $('#one').click(function (e) {
 
 $('#two').click(function (e) {
 	e.preventDefault();
-	console.log(e);
+	// console.log(e);
 
 	$('#twitterModal').modal();
 	$('#tweetText').empty().append(two.text);
@@ -111,7 +109,7 @@ $('#two').click(function (e) {
 
 $('#three').click(function (e) {
 	e.preventDefault();
-	console.log(e);
+	// console.log(e);
 
 	$('#twitterModal').modal();
 	$('#tweetText').empty().append(three.text);
@@ -121,7 +119,7 @@ $('#three').click(function (e) {
 
 $('#four').click(function (e) {
 	e.preventDefault();
-	console.log(e);
+	// console.log(e);
 
 	$('#twitterModal').modal();
 	$('#tweetText').empty().append(four.text);
@@ -131,8 +129,8 @@ $('#four').click(function (e) {
 
 $('#five').click(function (e) {
 	e.preventDefault();
-	console.log(e);
-	console.log(five.text);
+	// console.log(e);
+	// console.log(five.text);
 
 	$('#twitterModal').modal();
 	$('#tweetText').empty().append(five.text);
@@ -144,7 +142,7 @@ $('#five').click(function (e) {
 // Instagram modals
 $('#gram1').click(function (e) {
 	e.preventDefault();
-	console.log(e);
+	// console.log(e);
 
 	$('#instaModal').modal();
 	$('#gram-pic').empty().append("<img src='" + gram1.images.low_resolution.url + "'>");
@@ -155,7 +153,7 @@ $('#gram1').click(function (e) {
 
 $('#gram2').click(function (e) {
 	e.preventDefault();
-	console.log(e);
+	// console.log(e);
 
 	$('#instaModal').modal();
 	$('#gram-pic').empty().append("<img src='" + gram2.images.low_resolution.url + "'>");
@@ -166,7 +164,7 @@ $('#gram2').click(function (e) {
 
 $('#gram3').click(function (e) {
 	e.preventDefault();
-	console.log(e);
+	// console.log(e);
 
 	$('#instaModal').modal();
 	$('#gram-pic').empty().append("<img src='" + gram3.images.low_resolution.url + "'>");
@@ -174,7 +172,6 @@ $('#gram3').click(function (e) {
 	$('#gramUserProfilePic').empty().append("<img style='width:48px;height' src='" + gram3.user.profile_picture + "'>");
 	$('#gramUser').empty().append("<a target='_blank' href='//www.instagram.com/" + gram3.user.username + "'>" + gram3.user.username + "</a>");
 });
-
 
 // YouTube Modals
 $('#tube1').click(function (e) {
@@ -184,6 +181,7 @@ $('#tube1').click(function (e) {
 	$('#youtubeModal').modal();
 	$('#videoTitle').empty().append(tube1.snippet.title);
 	$('#modalVideo').empty().append("<iframe width='575' height='323' src='//www.youtube.com/embed/" + tube1.id + "'></iframe>");
+	console.log(tube1.id);
 	$('#youtube-user').empty().append("<a target='_blank' href='//youtube.com/channel/" + tube1.snippet.channelId + "'>" + tube1.snippet.channelTitle + "</a>");
 	$('#videoDescription').empty().append(tube1.snippet.description);
 });
@@ -209,22 +207,3 @@ $('#tube3').click(function (e) {
 	$('#youtube-user').empty().append("<a target='_blank' href='//youtube.com/channel/" + tube3.snippet.channelId + "'>" + tube3.snippet.channelTitle + "</a>");
 	$('#videoDescription').empty().append(tube3.snippet.description);
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
