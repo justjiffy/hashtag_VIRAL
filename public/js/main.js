@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$.get('feeds/', function(data) {
+	$.get('feeds/search', function(data) {
 		for (i=0; i<5; i++) {
 			$('#one').append( "<div class='tweet'><p class='twit'>" + data[0].feed[i].text + "</p>" );
 			one = data[0].feed[i];
